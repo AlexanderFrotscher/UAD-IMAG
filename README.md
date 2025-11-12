@@ -36,7 +36,7 @@ Path
 ```
 
 ## Preprocessing
-For preprocessing the datasets, we applied a pipeline similar to the UK Biobank protocol. For training the methods, you need to generate a Lightning Memory-Mapped Database of the preprocessed slices with the [create_LMDB.py](utils/create_LMDB.py) script. Use the .csv that contains the paths to all files used during training.
+For preprocessing the datasets, we applied a [pipeline](https://github.com/AlexanderFrotscher/UKB-MRI-Preprocessing) similar to the UK Biobank protocol. For training the methods, you need to generate a Lightning Memory-Mapped Database of the preprocessed slices with the [create_LMDB.py](utils/create_LMDB.py) script. Use the .csv that contains the paths to all files used during training.
 
 ```
 python utils/create_LMDB.py -d path_to_csv.csv -p "path_to_store_lmdb"
