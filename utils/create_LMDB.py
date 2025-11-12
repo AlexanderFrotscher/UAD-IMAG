@@ -19,7 +19,7 @@ def main(args):
 
 def split_and_save(args):
     os.makedirs(
-        "D:\\DokumenteD\\Uni\\Programme\\Python\\Deep Learning\\data\\test_data_brats",
+        args.path,
         exist_ok=True,
     )
     df = pd.read_csv(args.data_set)
@@ -27,7 +27,7 @@ def split_and_save(args):
     map_size = 70000000 * len(pbar)  #  71424196 * len(pbar)
     env = lmdb.open(
         str(
-            f"D:\\DokumenteD\\Uni\\Programme\\Python\\Deep Learning\\data\\test_data_brats\\slices_{args.data_type}"
+            f"{args.path}\\slices"
         ),
         map_size=map_size,
     )
@@ -56,16 +56,15 @@ if __name__ == "__main__":
         type=str,
         required=True,
         metavar="",
-        help="The csv that contains the paths to the MRI-Volumes.",
+        help="The .csv that contains the paths to the MRI-Volumes.",
     )
     parser.add_argument(
-        "-t",
-        "--data_type",
+        "-p",
+        "--path",
         type=str,
-        default="T1w",
         required=True,
         metavar="",
-        help="The BIDS ending for the MRI Sequence (T1w or T2w, etc).",
+        help="The path indicating where to store the LMDB.",
     )
     args = parser.parse_args()
     main(args)
