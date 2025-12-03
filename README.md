@@ -6,7 +6,12 @@ The training cohort comprised 2,976 T1 and 2,972 T2-weighted scans (≈ 461,000 
 
 &nbsp;
 
-![Results](results.png)
+<p align="center">
+  <img src=https://github.com/AlexanderFrotscher/UAD-IMAG/blob/main/results.svg />
+</p>
+
+&nbsp;
+
 
 Across all algorithms, the Dice-based segmentation performance ranged between ≈ 0.03 and ≈ 0.65, indicating substantial variability and underscoring that no single method achieved consistent superiority across lesion types or modalities for any task. To assess robustness, we systematically evaluated the impact of scanner variability, lesion type and size, and demographics (age, sex).
 *Reconstruction-based* methods, particularly diffusion-inspired approaches, achieved the strongest lesion segmentation performance, while *feature-based* methods showed greater robustness under distributional shifts. However, systematic biases, such as lesion size, amplified scanner-related effects, while small and low-contrast lesions were missed more often, and false positives varied with age and sex.
