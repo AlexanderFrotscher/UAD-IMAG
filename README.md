@@ -1,7 +1,7 @@
 # UAD-IMAG
 
 This repository contains the code for the [Deep Unsupervised Anomaly Detection in Brain Imaging:
-Large-Scale Benchmarking and Bias Analysis](https://github.com/AlexanderFrotscher/UAD-IMAG) publication. Deep unsupervised anomaly detection in brain magnetic resonance imaging offers a promising route to identify pathological deviations without requiring lesion-specific annotations. Yet, fragmented evaluations, heterogeneous datasets, and inconsistent metrics have hindered progress toward clinical translation. Here, we present a large-scale, multi-center benchmark of deep unsupervised anomaly detection for brain imaging.
+Large-Scale Benchmarking and Bias Analysis](https://arxiv.org/pdf/2512.01534) publication. Deep unsupervised anomaly detection in brain magnetic resonance imaging offers a promising route to identify pathological deviations without requiring lesion-specific annotations. Yet, fragmented evaluations, heterogeneous datasets, and inconsistent metrics have hindered progress toward clinical translation. Here, we present a large-scale, multi-center benchmark of deep unsupervised anomaly detection for brain imaging.
 The training cohort comprised 2,976 T1 and 2,972 T2-weighted scans (≈ 461,000 slices) from healthy individuals across six scanners, with ages ranging from 6 to 89 years. Validation used 92 scans to tune hyperparameters and estimate unbiased thresholds. Testing encompassed 2,221 T1w and 1,262 T2w scans spanning healthy datasets and diverse clinical cohorts. 
 
 &nbsp;
